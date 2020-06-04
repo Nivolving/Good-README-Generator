@@ -24,6 +24,17 @@ const questions = [
    message : "How do you install the dependencies for the project",
    name:"installation"
 },
+{ 
+   type : "input",
+   message : "Contributions are welcomed",
+   name:"contributing"
+},
+{ 
+   type : "input",
+   message : "How to run tests",
+   name:"tests"
+},
+
 ];
 
 function writeToFile(fileName, answers) {
@@ -40,7 +51,7 @@ inquirer
 .prompt( questions )
 .then((answers) => {
     //console.log( answers );
-    writeToFile('README.md', answers);
+    writeToFile('../README.md', answers);
     console.log( generateMarkdown( answers ) );
 });
 }
