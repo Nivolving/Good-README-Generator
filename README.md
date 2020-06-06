@@ -3,7 +3,7 @@
 README Generator
 
 ## Description
-CLI App for generating a README
+CLI App for generating README file
 
 # Table Of Contents
 * [Title](Readme.md#title)
@@ -18,10 +18,10 @@ CLI App for generating a README
 npm install
 
 ## License
-![AGPL license](https://img.shields.io/badge/license-AGPL-blue.svg)
+![GPLv3 license](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
 ## Contribution [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat)](https://github.com/nivolving/)
-nivolving
+
 
 ## Tests
 npm run tests
