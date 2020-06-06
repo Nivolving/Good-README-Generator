@@ -1,6 +1,5 @@
 function generateMarkdown(data) {
   return `
-
 # Title
 ${data.title}
 
@@ -22,20 +21,24 @@ ${data.installation}
 ## License
 ${generateBadges(data.license)}
 
-## Contributing
+## Contribution [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat)](https://github.com/${data.username}/)
 ${data.contributing}
 
 ## Tests
 ${data.tests}
 
+## Usage
+${data.usage}
+
 `;
 }
 
-function generateBadges( license ){
-  return `
-    [![${license} License](https://img.shields.io/badge/license-${license}-blue.svg)](http://www.gnu.org/licenses/${license}-3.0)
-  `;
+function generateBadges(license) {  
+  if (license !== "None")
+  {    
+    return `![${license} license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  }  
+return ''
 }
-
 
 module.exports = generateMarkdown;

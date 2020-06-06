@@ -5,34 +5,44 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
 { 
    type : "input",
-   message : "Enter a Project Title",
+   message : "Project Name",
    name:"title"
 },
 { 
    type : "input",
-   message : "Enter a suitable description for your project",
+   message : "Project Description",
    name:"description"
 },
 {  
    type : "list",
-   message : "Please select a badge for your README",
-   choices:["MIT License","GPLv3","AGPL"],
+   message : "Select a license name",
+   choices:["MIT","GPLv3","AGPL"],
    name:"license"
 },
 { 
    type : "input",
-   message : "How do you install the dependencies for the project",
+   message : "Install Commands",
    name:"installation"
 },
 { 
    type : "input",
-   message : "Contributions are welcomed",
+   message : "Contributions",
    name:"contributing"
 },
 { 
    type : "input",
-   message : "How to run tests",
+   message : "Test Commands",
    name:"tests"
+},
+{ 
+   type : "input",
+   message : "Usage Commands or Instructions",
+   name:"usage"
+},
+{ 
+   type : "input",
+   message : "Github Username",
+   name:"username"
 },
 
 ];
